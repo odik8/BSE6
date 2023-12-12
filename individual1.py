@@ -7,5 +7,6 @@ def main():
 
     return f"Count of '{symbol1}' symbol and '{symbol2}' symbol is {sentence.count(symbol1) + sentence.count(symbol2)}"
 
+
 if __name__ == "__main__":
     print(main())

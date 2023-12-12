@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
+# -*- coding utf-8 -*-
 
-def common_letters(word1, word2, word3):
-    set1 = set(word1)
-    set2 = set(word2)
-    set3 = set(word3)
+def common_letters():
+    word1 = str(input("Введите слово: "))
+    word2 = str(input("Введите второе слово: "))
+    word3 = str(input("Введите третье слово: "))
 
-    common_letters_set = set1.intersection(set2, set3)
+    commons = []
 
-    print("Общие буквы:", ", ".join(common_letters_set))
+    for i in word1:
+        if i in word2 and i in word3 and i not in commons:
+            commons.append(i)
+
+    return commons
 
 
 if __name__ == "__main__":
-    common_letters("1Kawazaki", "1iCago", "1Kricko")
+    print(f"Общие буквы: {common_letters()}")

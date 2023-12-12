@@ -29,8 +29,6 @@ def check_words(sequence):
         print(f'  "{word}"')
 
 
-
-
 if __name__ == "__main__":
     word_sequence = [
         "чяй", "чайник", "чашка", "чящя", "роща", "щявель",
